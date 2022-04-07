@@ -8,7 +8,8 @@
 <body>
     <div id="bottoni" class="container flex-container align-center">
         <a class="item" href="index.html">Torna indietro</a>
-    
+        <a class="item" href="#html">HTML</a>
+        <a class="item" href="#css">CSS</a>
     </div>
     <div id="paragraph">
         <h1>Le origini e l'evoluzione</h1>
@@ -76,11 +77,76 @@
         vuoi anche per la diversa resa dei browser sulle parti di codice HTML.
        </p>
    </div>
+
    <hr />
 
+   <div id="css" class="articolo">
+        <p>
+            Per permettere agli autori di poter plasmare liberamente l'aspetto delle pagine web, dal 1993 in poi <strong>Netscape Navigator</strong>
+            ed <strong>Internet Explorer</strong>, i due software di navigazione che si disputavano gli utenti nella nota guerra dei browser, presentarono 
+            <span class="underline">tag proprietari</span>, ovvero non aderenti agli standard né compatibili con i browser concorrenti. 
+            Un esempio di questi tag era
+            <span id="decorazione">
+                &lt;font&gt;
+            </span>
+            che andava a definire il font dei caratteri.
+            <br />
+            <br />
 
+            Questi tag proprietari di formattazione erano l'unico modo per gli autori di definire la formattazione, così il loro uso
+            è diventato molto intenso. Tuttavia questi tag presentavano tre problemi:
+        </p>
+        <br />
+        <br />
+        <ol>
+            <li>
+                Il primo problema è costituito dalla <span class="underline">lunghezza dei tag</span>. Se confrontata con una pagina che
+                adotta il linguaggio <strong>CSS</strong>, una pagina che non lo adotta è in genere più pesante (in termini di bit) in un rapporto
+                che spesso raggiunge lo 0,2%. Inoltre, le istruzioni CSS possono essere raccolte in un file esterno che rimane
+                memorizzato nella cache del browser, riducendo ulteriormente la quantità di dati che i server devono trasmettere
+            </li>
+            <li>
+                Il secondo problema risiede nella <span class="underline">mancanza di logica</span> del codice <strong>(X)HTML</strong>. Un codice non aderente
+                agli standard, ridondante e confuso comporta infatti molto lavoro aggiuntivo per i browser, che devono cercare di
+                correggere ed interpretare (quando possibile) direttive arbitrarie.
+            </li>
+            <li>
+                Il terzo problema è la <span class="underline">mancanza di compatibilità</span> con i computer palmari e gli smartphone. Queste pagine infatti
+                sono progettate per schermi con risoluzione minima 800×600 pixel. Dispositivi come i palmari (o i più moderni tablet)
+                che possono avere una risoluzione inferiore ed una forma dello schermo ben diversa dal rapporto 4:3 dei monitor
+                per computer, si trovano quindi impossibilitati a visualizzare correttamente la pagina con il risultato che l'utente
+                si troverà una pagina confusa e scomoda da leggere.
+            </li>
+        </ol>
+        <p>
+            Per tentare di risolvere questa situazione, nel <strong>1996</strong> il W3C emanò le specifiche <strong>CSS 1</strong>. 
+            I CSS 1 erano un interessante sistema per separare contenuto da formattazione. La base di questo linguaggio, infatti, 
+            consisteva nel fatto che il contenuto sarebbe stato sempre definito dal codice <strong>(X)HTML</strong>, mentre la
+            formattazione si sarebbe trasferita su un <span class="underline">codice completamente separato</span>, il CSS appunto.
+            I richiami tra i due codici venivano effettuati tramite due particolari attributi: <strong>class</strong> e
+            <strong>ID</strong>.
+            <br />
+            <br />
+            I CSS sviluppavano un'idea semplice ma efficace, ma nonostante le loro grandi potenzialità non ebbero successo a
+            causa della mancanza di browser in grado di supportarli.
+            <br />
+            <br />
+            Per includere le nuove funzionalità e rendere i CSS un linguaggio ben supportato, nel <strong>1998</strong> il W3C
+            pubblicò le specifiche <strong>CSS 2</strong>. Nel <strong>2004</strong> iniziarono i lavori sulle specifiche
+            aggiornate <strong>CSS 2.1</strong> che divennero raccomandazione ufficiale il 7 giugno 2011.
+            <br />
+            <br />
+            I CSS 2 sono la naturale evoluzione dei CSS 1 ed offrono potenti soluzioni per risolvere soprattutto il terzo problema,
+            con la possibilità di creare <span class="underline">fogli di stile separati per i dispositivi portatili</span>. 
+            Anche il secondo problema è ormai pienamente risolvibile, scrivendo una pagina (X)HTML esclusivamente indirizzata
+            alla struttura e ai contenuti e manovrandola poi esclusivamente con i CSS per impaginarla.
+            <br />
+            <br />
+            A partire da <strong>Internet Explorer 5, Firefox</strong> e <strong>Opera 7</strong>, i CSS 2 hanno potuto avvalersi
+            di browser in grado di interpretarli e sono quindi entrati a far parte del codice di molti siti web.
+        </p>
 
-
-
+   </div>
 </body>
+
 </html>
