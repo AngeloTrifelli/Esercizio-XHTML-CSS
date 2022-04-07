@@ -31,7 +31,7 @@ h2{
     font-weight: 600;
 }
 
-p{
+p, ol{
     margin-top: 10px;
     font-size: 150%;
 }
@@ -78,4 +78,13 @@ p{
 
 .underline{
     text-decoration: underline;
+}
+
+#decorazione{
+    background-color: #f3f4f5;
+    color: #65676b;
+}
+
+li{
+    margin-bottom: 5%;
 }
