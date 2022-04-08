@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <title>Funzionalità di HTML e CSS</title>
+    <link rel="stylesheet" href="funzionalita.css" type="text/css" />
+</head> 
+<body>
+
+    <div class="container flex-container align-center">
+        <a class="item" href="index.html">Torna indietro</a>
+        <a class="item" href="#html">HTML</a>
+        <a class="item" href="#css">CSS</a>
+    </div>
+
+    <div id="paragraph">
+        <h1>Le funzionalit&agrave; di HTML e CSS</h1>
+   </div>
+
+   <div id="html" class="articolo">
+       <p>
+           <strong>HTML</strong> attraverso l'uso di tag e degli elementi 
+           permette di poter creare lo scheletro della nostra pagina
+           web e non solo...
+           <br />
+           <br />
+           Ora elencheremo alcune delle possibili opportunità che 
+           HTML mette a disposizione:
+           <br /><strong>Analizziamo i primi semplici elementi 
+               con relativi tag
+           </strong>
+           <ul>
+               <li><span id="decorazione">&lt;h1&gt;</span> elemento block-level utilizzato per il titolo
+                   principale(utilizzando h2,h3 fino ad h6 avremo titoli che avranno
+                   un importanza gerarchica sempre minore)
+               </li>
+               <li><span id="decorazione">&lt;a&gt;</span> &egrave; elemento utilizzato per link esterni </li>
+               <li><span id="decorazione">&lt;em&gt;</span> &egrave; elemento inline per testo <em>in corsivo</em></li>
+               <li><span id="decorazione">&lt;br&gt;</span> &egrave; elemento non strutturle utilizzato per andare a capo</li>
+               <li><span id="decorazione">&lt;strong&gt;</span> &egrave; elemento inline per il <strong>grassetto</strong></li>
+               <li><span id="decorazione">&lt;ul&gt;</span> &egrave; elemento lista(lista che contiene elementi 'punto di lista')</li>
+               <li><span id="decorazione">&lt;il&gt;</span> &egrave; elemento punto di lista</li>
+           </ul>
+           <br />
+           Un'altra importante risorse &egrave; quella delle tabelle 
+           con specifico tag di apertura <span id="decorazione">&lt;table&gt;</span>. Un esempio di tabella 
+           creata in HTML è la seguente:
+           <br />
+
+           <table border="1" cellspacing="3" cellpadding="5" 
+           summary="spiegazioni sul significato della tabella">
+                <caption>Al fruttivendolo</caption>
+                    <tbody> 
+                            <tr> 
+                                <td>Mele</td> 
+                                <td>&euro;2,50</td>
+                    </tr> 
+                    <tr> 
+                        <td>Pere</td> 
+                        <td>&euro;3,05</td>
+                    </tr> 
+                    <tr> 
+                        <td>Fragole</td> 
+                        <td>&euro;6,20</td>
+                    </tr>
+                    </tbody>
+           </table>   
+       </p>
+       </div>
+       <hr>
+
+       <div id="css" class="articolo">
+           <p>
+               Abbiamo visto come con HTML possiamo costruire le 
+               fondamenta della nostra pagina web. <br />
+               Ma a livello estetico il vero lavoro lo fa il 
+               <strong>CSS</strong>. Con il CSS possiamo decidere 
+               il layout della nostra pagina, come vogliamo che venga 
+               visualizzato, che colore devono essere le scritte o il nostro sfondo.
+               Ad esempio la tabella precedente attraerso il CSS può assumere queste
+               sembianze:
+               <br />
+               
+               <table border="1" cellspacing="3" cellpadding="5" 
+           summary="spiegazioni sul significato della tabella"
+           id="tabella">
+                <caption>Al fruttivendolo</caption>
+                    <tbody> 
+                            <tr> 
+                                <td>Mele</td> 
+                                <td>&euro;2,50</td>
+                    </tr> 
+                    <tr> 
+                        <td>Pere</td> 
+                        <td>&euro;3,05</td>
+                    </tr> 
+                    <tr> 
+                        <td>Fragole</td> 
+                        <td>&euro;6,20</td>
+                    </tr>
+                    </tbody>
+           </table>  
+           Ma questo &egrave; solo un banalissimo esempio. 
+           L'esempio pi&ugrave; adatto &egrave; la pagina stessa 
+           che ora state visualizzando. L'intero layout &egrave;
+           stato realizzato attraverso il <strong>CSS</strong>!
+    
+
+           </p>
+       </div>
+
+
+
+
+</body>
+</html>
