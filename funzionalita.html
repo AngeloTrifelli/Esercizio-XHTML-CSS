@@ -30,45 +30,76 @@
            <br /><strong>Analizziamo i primi semplici elementi 
                con relativi tag
            </strong>
+        </p>
            <ul>
-               <li><span id="decorazione">&lt;h1&gt;</span> elemento block-level utilizzato per il titolo
+               <li><span class="decorazione">&lt;h1&gt;</span> elemento block-level utilizzato per il titolo
                    principale(utilizzando h2,h3 fino ad h6 avremo titoli che avranno
                    un importanza gerarchica sempre minore)
                </li>
-               <li><span id="decorazione">&lt;a&gt;</span> &egrave; elemento utilizzato per link esterni </li>
-               <li><span id="decorazione">&lt;em&gt;</span> &egrave; elemento inline per testo <em>in corsivo</em></li>
-               <li><span id="decorazione">&lt;br&gt;</span> &egrave; elemento non strutturle utilizzato per andare a capo</li>
-               <li><span id="decorazione">&lt;strong&gt;</span> &egrave; elemento inline per il <strong>grassetto</strong></li>
-               <li><span id="decorazione">&lt;ul&gt;</span> &egrave; elemento lista(lista che contiene elementi 'punto di lista')</li>
-               <li><span id="decorazione">&lt;il&gt;</span> &egrave; elemento punto di lista</li>
+               <li><span class="decorazione">&lt;p&gt;</span> &egrave; l'elemento utilizzato per creare paragrafi </li>
+               <li><span class="decorazione">&lt;a&gt;</span> &egrave; l'elemento utilizzato per link esterni </li>
+               <li><span class="decorazione">&lt;em&gt;</span> &egrave; l'elemento inline per testo <em>in corsivo</em></li>
+               <li><span class="decorazione">&lt;br&gt;</span> &egrave; l'elemento non strutturle utilizzato per andare a capo</li>
+               <li><span class="decorazione">&lt;strong&gt;</span> &egrave; l'elemento inline per il <strong>grassetto</strong></li>
+               <li><span class="decorazione">&lt;ul&gt;</span> &egrave; l'elemento lista per creare liste non ordinate(lista che contiene elementi 'punto di lista')</li>
+               <li><span class="decorazione">&lt;il&gt;</span> &egrave; l'elemento punto di lista</li>
+               <li><span class="decorazione">&lt;img&gt;</span> &egrave; l'elemento utilizzato per inserire un'immagine </li>
            </ul>
+        <p>
            <br />
            Un'altra importante risorse &egrave; quella delle tabelle 
-           con specifico tag di apertura <span id="decorazione">&lt;table&gt;</span>. Un esempio di tabella 
+           con specifico tag di apertura <span class="decorazione">&lt;table&gt;</span>. Un esempio di tabella 
            creata in HTML è la seguente:
            <br />
+        </p>
 
-           <table border="1" cellspacing="3" cellpadding="5" 
-           summary="spiegazioni sul significato della tabella">
-                <caption>Al fruttivendolo</caption>
-                    <tbody> 
-                            <tr> 
-                                <td>Mele</td> 
-                                <td>&euro;2,50</td>
-                    </tr> 
-                    <tr> 
-                        <td>Pere</td> 
-                        <td>&euro;3,05</td>
-                    </tr> 
-                    <tr> 
-                        <td>Fragole</td> 
-                        <td>&euro;6,20</td>
-                    </tr>
-                    </tbody>
-           </table>   
-       </p>
+        <table  border = "1" cellspacing="3" cellpadding="5" 
+        summary="spiegazioni sul significato della tabella">
+            <caption>Al fruttivendolo</caption>
+            <tbody> 
+                <tr> 
+                    <td>Mele</td> 
+                    <td>&euro;2,50</td>
+                </tr> 
+                <tr> 
+                    <td>Pere</td> 
+                    <td>&euro;3,05</td>
+                </tr> 
+                <tr> 
+                    <td>Fragole</td> 
+                    <td>&euro;6,20</td>
+                </tr>
+            </tbody>
+        </table>   
+
+        <br />
+        <br />
+
+        <p>
+            In particolare, con HTML gli elementi vengono distinti in due 
+            categorie : 
+        </p>
+        <br />
+            <ol>
+                <li>
+                    <strong>Elementi block-level:</strong> vengono visualizzati
+                    per default nettamente separati dagli altri elementi. Ad 
+                    esempio <span class="decorazione">&lt;p&gt;</span> e 
+                    <span class="decorazione">&lt;table&gt;</span> fanno parte di 
+                    questa categoria.
+                </li>
+                <li>
+                    <strong>Elementi in-line:</strong> vengono visualizzati con
+                    continuit&agrave; rispetto al testo che li circonda. Ad esempio
+                    <span class="decorazione">&lt;img&gt;</span> , <span class="decorazione">&lt;strong&gt;</span> 
+                    <span class="decorazione">&lt;a&gt;</span> , <span class="decorazione">&lt;em&gt;</span> 
+                    , ... fanno parte di questa categoria 
+                
+                </li>
+            </ol>
        </div>
-       <hr>
+       
+       <hr />
 
        <div id="css" class="articolo">
            <p>
@@ -81,11 +112,12 @@
                Ad esempio la tabella precedente attraerso il CSS può assumere queste
                sembianze:
                <br />
-               
-               <table border="1" cellspacing="3" cellpadding="5" 
+            </p>
+
+            <table border="1" cellspacing="3" cellpadding="5" 
            summary="spiegazioni sul significato della tabella"
-           id="tabella">
-                <caption>Al fruttivendolo</caption>
+           id="tabellaCSS">
+                <caption id="captionCSS">Al fruttivendolo</caption>
                     <tbody> 
                             <tr> 
                                 <td>Mele</td> 
@@ -101,13 +133,65 @@
                     </tr>
                     </tbody>
            </table>  
+
+        <br />
+        <p>
            Ma questo &egrave; solo un banalissimo esempio. 
            L'esempio pi&ugrave; adatto &egrave; la pagina stessa 
            che ora state visualizzando. L'intero layout &egrave;
            stato realizzato attraverso il <strong>CSS</strong>!
-    
 
-           </p>
+        <br />
+        <br />
+
+            In particolare, con CSS le regole possono essere definite 
+            in tre modi distinti:
+        </p>
+
+        <br />
+
+        <ol>
+            <li>
+                <strong>Regole inline:</strong> definite direttamente nell'elemento
+                che governano, mediante l'attributo: <span style="color:blue; font-weight: bolder;">"style"</span>
+            </li>
+            <li>
+                <strong>Internal stylesheet:</strong> definite nella <span class="decorazione">&lt;head&gt;</span>
+                del documento, mediante il tag: <span style="color: blue; font-weight: bolder;">&lt;style&gt;</span>
+            </li>
+            <li>
+                <strong>External stylesheet:</strong> definite in un <span style="text-decoration: underline;">file a parte</span>
+                che poi viene riferito con un elemento <span class="decorazione">&lt;link&gt;</span> del documento
+            </li>
+        </ol>
+
+        <br />
+        <br />
+
+        <p>
+            Per definire una regola si associa:
+        </p>
+
+        <br />
+
+        <ul>
+            <li>
+                <strong>Un selettore:</strong> elemento o "tipi di elemento"
+                a cui applicare la regola.
+            </li>
+            <li>
+                <strong>Insieme di comandi di stile:</strong> racchiusi tra
+                {...} 
+            </li>
+        </ul>
+        
+        <br />
+        
+        <p style="text-align: center;">
+            <span style="color: blue;">selettore </span>
+            <span style="color:purple;">{property: value; ... ;
+            property: value}</span>
+        </p>
        </div>
 
 
