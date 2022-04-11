@@ -67,12 +67,20 @@ h2{
     margin-bottom: 56px;
 }
 
-#tabella{
+#tabellaCSS{
     background-color: #093824;
-    color: antiquewhite;           
+    color: rgb(255, 154, 2);           
 }
 
-#decorazione{
+#captionCSS{
+    color: red;
+}
+
+.decorazione{
     background-color: rgb(201, 223, 231);
     color: #65676b;
+}
+
+li{
+    margin-bottom: 25px;
 }
