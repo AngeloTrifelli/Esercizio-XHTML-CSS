@@ -27,3 +27,6 @@ Per HTML abbiamo cercato di utilizzare la maggior parte degli elementi possibili
 Con CSS oltre alle proprietà viste a lezione abbiamo anche aggiunto delle 
 particolarità come ad esempio l'introduzione di una durata per l'animazione 
 
+---
+ok, I'll check the submission on bridge
+mt
