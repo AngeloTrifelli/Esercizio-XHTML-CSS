@@ -23,9 +23,7 @@ h1{
     line-height: 105px;
     font-weight: 800;
     text-align: center;
-    position: absolute;
-    top: 20%;
-    left: 15%;
+    padding-top: 5%;
     color: white;
 }
 
@@ -49,37 +47,14 @@ h2{
     text-align: center;
 }
 
-.immagineuno{
-    position: absolute;
-    left: 60%;
-    top: 55%;
-    
+.immagine1{
+    width: 60%;
+    margin-left: 15%;
 }
 
-.immaginedue{
-    position: absolute;
-    left: 65%;
-    top: 115%;
-    
-}
-
-.immaginetre{
-    position: absolute;
-    left: 65%;
-    top: 180%;
-    
-}
-
-
-
-#immagine1{
-    width: 90%;
-}
 #immagine2{
-    width: 70%;
-}
-#immagine3{
-    width: 70%;
+    width: 60%;
+    margin-left: 10%;
 }
 
 .animazione{
@@ -110,15 +85,20 @@ h2{
 }
 
 .main-articolo{
+    display: flex;
     margin-top: 15%;
     margin-bottom: 56px;
+    flex-direction: row;
 }
 .articolo{
+    display: flex;
     margin-top: 20%;
     margin-bottom: 56px;
+    flex-direction: row;
 }
 
 .articolo-flex{
     display: flex;
     flex-direction: column;
+    margin-left: 15%;
 }
