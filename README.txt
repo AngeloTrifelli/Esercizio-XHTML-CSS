@@ -31,9 +31,4 @@ particolarità come ad esempio l'introduzione di una durata per l'animazione
 ok, I'll check the submission on bridge
 mt
 
----
-perbacco, ho provato a creare un issue ma non me lo faceva salvare.
-**Ecco il contenuto:**
-> in effetti e' giusto che il readme su git e quello su bridge coincidano, come contenuti.
-> Invece forse su github potreste mettere il readme in markdown.
-> Ma va bene cosi' per il primo. Magari pensateci per il secondo.
+vedi issue
